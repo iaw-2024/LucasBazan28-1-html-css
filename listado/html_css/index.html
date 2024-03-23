@@ -1,0 +1,51 @@
+<!doctype html>
+<html  lang="es">
+    <head> 
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <title>Copas del Club Atlético River Plate</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function showNacionales() {
+                document.getElementById('Copas').innerHTML = '<ul><li>Liga Profesional de Fútbol 2023</li><li>Trofeo de Campeones 2023</li><li>Supercopa Argentina 2023</li><li>Liga Profesional de Fútbol 2021</li><li>Trofeo de Campeones 2021</li><li>Supercopa Argentina 2021</li><li>Y otras casi 50 más...</li></ul>';
+            }
+
+            function showInternacionales() {
+                document.getElementById('Copas').innerHTML = '<ul><li>Recopa Sudamericana 2019</li><li>Copa Libertadores 2018</li><li>Recopa Sudamericana 2016</li><li>Copa Libertadores 2015</li><li>Recopa Sudamericana 2015</li><li>Copa Sudamericana 2014</li></ul>';
+            }
+
+            function volverAInicio(){
+                document.getElementById('Copas').innerHTML = '<img src="https://i.pinimg.com/564x/de/e5/8f/dee58fbf03b3e4e0d697bae497f7520b.jpg" alt="Escudo River Plate 1986">'
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1 id="titulo">Copas de River</h1>
+
+        <div id="botones">
+            <button class="botonCopa" onclick="showNacionales()">
+                <b>Nacionales</b>
+            </button>
+            <button class="botonCopa" onclick="showInternacionales()">
+                <b>Internacionales</b>
+            </button>
+        </div>
+
+        <div id="Copas">
+            <!--
+            Este div es para mostrar el listado de copas.
+            Inicialmente foto del escudo, con copas de fondo.
+            Luego, se modifica el contenido del div en base
+            al boton seleccionado.
+            -->
+            <img src="https://i.pinimg.com/564x/de/e5/8f/dee58fbf03b3e4e0d697bae497f7520b.jpg" alt="Escudo River Plate 1986">
+        </div>
+
+        <button class="botonRetornarAInicio" onclick="volverAInicio()">
+            <b>Volver al inicio</b>
+        </button>
+    
+    </body>
+</html>

@@ -1,0 +1,78 @@
+#titulo{
+    justify-content: center;
+    display: flex;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 700;
+}
+
+#botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonCopa {
+    background-color: #e7e7e7;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+    font-size: large;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(206, 206, 206);
+    transition: all 0.4s ease;
+}
+.botonCopa:hover {
+    background-color: rgb(214, 49, 49);
+    color: white;
+    box-shadow: 0px 10px 15px rgba(134, 1, 1, 0.2);
+}
+
+#Copas {
+    height: 60%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.botonRetornarAInicio {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+    font-size: large;
+    transition: all 0.4s ease;
+    margin: auto;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(206, 206, 206);;
+}
+.botonRetornarAInicio:hover {
+    background-color: rgb(214, 49, 49);
+    color: white;
+    box-shadow: 0px 10px 15px rgba(134, 1, 1, 0.2);
+}
+
+ul {
+    margin-bottom: 20%;
+    margin-top: 3%;
+    float: left;
+    color: #333;
+    flex-grow: 1;
+} 
+ul li {
+    background-color: #e7e7e7;
+    padding: 0.7%;
+    margin-bottom: 1%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
